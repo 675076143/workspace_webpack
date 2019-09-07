@@ -1,0 +1,518 @@
+*{
+	font-family: "宋体";
+}
+.land{
+	padding-left: 5px;
+	list-style: none;
+	width: 250px;
+	height: 270px;
+	overflow: auto;
+	background-color: white;
+}
+.land li{
+	float: none!important;
+	height: 29px;
+	width: 245px!important;
+	cursor: pointer;
+}
+.myTaoBao{
+	padding-left: 5px;
+	list-style: none;
+	width: 90px;
+	height: 80px;
+	overflow: auto;
+	background-color: white;
+}
+.collectedBaby{
+	padding-left: 5px;
+	list-style: none;
+	width: 90px;
+	height: 80px;
+	overflow: auto;
+	background-color: white;
+}
+.sellerCenter{
+	padding-left: 5px;
+	list-style: none;
+	width: 90px;
+	height: 250px;
+	overflow: auto;
+	background-color: white;
+}
+.contect{
+	padding-left: 5px;
+	list-style: none;
+	width: 90px;
+	height: 80px;
+	overflow: auto;
+	background-color: white;
+}
+.siteNav{
+	margin-left: -1110px;
+	list-style: none;
+	width: 1190px;
+	height: 310px;
+	overflow: auto;
+	background-color: white;
+	border-bottom: #F4F4F4 1px solid;
+	border-left: #F4F4F4 1px solid;
+	border-right: #F4F4F4 1px solid;
+}
+.siteNav ul p{
+	color: #fc4200;
+	font-size: 16px;
+	font-weight: 600;
+	margin-top: 5px;
+	margin-bottom: 0px;
+}
+.siteNav ul{
+	width: 25%;
+	height: 275px;
+	border-left: 1px solid #F4F4F4;
+	border-right: 1px solid #F4F4F4;
+	float: left;
+	list-style: none;
+	padding-left: 10px;
+}
+.siteNav ul li{
+	float: left!important;
+	width: 60px;
+	height: 27px;
+}
+.top{
+	height: 35px;
+	margin: 0 auto; width: 1190px;
+	list-style: none;
+	padding: 0;
+}
+.top li{
+	padding-top: 10px;
+	font-size: 12px;
+	float: left;
+	width: 80px;
+	height: 35px;
+	cursor: pointer;
+}
+.top li a{
+	padding-left: 5px;
+	color: black;
+}
+.top li aside ul li{
+	color: black!important;
+}
+.top li aside ul li:hover{
+	background-color: #F4F4F4!important;
+	cursor: pointer;
+}
+.top li aside{
+	position: fixed;
+	z-index: 999;
+	margin-top: 5px;
+	display: none;
+}
+.top li:nth-child(1):hover{
+	background-color: white;
+}
+.top li:nth-child(2){
+	color: #FF5000;
+}
+.top li:nth-child(5):hover{
+	background-color: white;
+}
+.top li:nth-child(11):hover{
+	background-color: white;
+}
+.top li:nth-child(n+5){
+	float: right;
+}
+.top li:nth-child(n+3):hover{
+	color: #FF5000;
+}
+
+.top li:hover aside{
+	display: block;
+}
+.head{
+	margin: 0 auto; width: 1190px; height: 121px; 
+}
+.navBackground{
+	background: linear-gradient(to right, #FF8F00, #FF5000);
+}
+.nav{
+	margin: 0 auto; width: 1190px; height: 30px;
+}
+.nav span{
+	line-height: 30px; 
+	text-align: center; 
+	display: block; 
+	background-color: #FF5000; 
+	font-size: 16px; height: 30px; width: 190px;
+	float: left;
+	font-weight: 600;
+	color: white;
+}
+.nav ul{
+	float: left; list-style: none;
+	display: block;
+	line-height: 30px;
+	font-weight: 600;
+	color: white;
+	padding-left: 5px;
+}
+.nav ul li{
+	float: left;
+	font-size: 14px;
+	padding-left: 7px;
+	padding-right: 7px;
+	font-weight: 700 ;
+}
+.btnSearch{
+	background: linear-gradient(to right, #FF8F00, #FF5000); 
+	width: 74px; 
+	height: 40px;
+	border: none;
+	border-top-right-radius: 30px;
+	border-bottom-right-radius: 30px;
+	float: left;
+	margin-top: 40px;
+	margin-left: -30px;
+	font-size: 18px;
+	font-weight: 700;
+	color: white;
+}
+.textSearch{
+	margin-left: 60px;
+	height: 40px; width: 600px; 
+	border: #FF5000 2px solid; border-radius: 36px;
+	margin-top: 40px;
+	float: left;
+	font-size: 12px;
+	padding-left: 20px;
+}
+.aSearch{
+	float: left;
+	width: 610px;
+	margin-left: 60px;
+}
+.aSearch a{
+	font-size: 12px;
+	padding: 0;
+	color: black;
+	cursor: pointer;
+}
+.aSearch a:hover{
+	color: #FF5000;
+	text-decoration: none;
+}
+.searchBlock{
+	float: left;
+	width: 800px;
+}
+.themeMarket{
+	width: 190px; height: 522px;
+	border: 1px solid #FF5000;
+	display: block;
+	background-color: white;
+	float: left;
+}
+.themeMarket ul{
+	display: block;
+	list-style: none;
+	float: left;
+	padding-left: 0px;
+}
+.themeMarket ul li{
+	display: block;
+	float: left;
+	height: 32px;
+	font-size: 14px;
+	margin-top: 2px;
+	width: 190px;
+	padding-left: 25px;
+	padding-top: 5px;
+}
+.themeMarket ul li a{
+	color: #666;
+}
+.themeMarket ul li:hover{
+	transition: all 0.5s;
+	background-color: #ffe4dc;
+}
+.center{
+	display: block;
+	border: 1px solid greenyellow;
+	width: 700px;
+	height: 522px;
+	float: left;
+}
+.centerImg{
+	width: 520px;
+	height: 280px;	
+	float: left;
+	display: block;
+}
+.centerAdv{
+	width: 160px; height: 508px;
+	float: left;display: block;
+	margin-left: 10px;
+}
+.centerAdv p{
+	margin-top: 10px;
+	margin-bottom: 0px;
+	color: #a1a1a1;
+	font-size: 12px;
+}
+.leftPanel{
+	border: 1px solid blue;
+	width: 900px;
+	height: 632px;
+	display: block;
+	float: left;
+}
+.rightPanel{
+	width: 290px;
+	height: 632px;
+	background-color: white;
+	float: left;
+	display: block;
+	
+	
+	border: 1px solid green;
+}
+.rightPanelBlock1{
+	height: 145px;
+}
+.rightPanelBlock1 a{
+	background-color: rgb(255, 228, 219);
+	color: red;
+	border-radius: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.rightPanelBlock1 button{
+	background: linear-gradient(to right,#ff5000 0,#ff6f06 100%);
+	border: none;
+	border-radius: 4px;
+	height: 25px;
+	color: white;
+	font-weight: 700;
+}
+
+.report{
+	background-color: #ffe4dd;
+	color: red;
+	font-size: 12px;
+	width: 290px;
+	display: block;
+	padding-left: 82px;
+	padding-top: 4px;
+	height: 26px;
+}
+
+.rightPanel ul{
+	list-style: none;
+	padding-left: 0px;
+	height: 24px;
+	margin-top: 4px;
+}
+.rightPanel ul li{
+	float: left;
+	padding: 12px;
+	font-size: 12px;
+}
+.rightPanel ul li a{
+	color: black;
+	display: block;
+	width: 34px;
+	padding-left: 4px;
+}
+.rightPanel ul li a:hover{
+	font-weight: 700;
+	text-decoration: none;
+	cursor: pointer;
+	border-bottom: 3px solid #FF5000;
+}
+
+.ulDetail{
+	margin-top: 20px;
+	
+	height: 65px;
+}
+.ulDetail p{
+	font-size: 12px;
+	padding-left: 10px;
+}
+.ulDetail p a{
+	height: 25px;
+	width: 130px;
+	color: black;
+}
+.navRight{
+	margin-top: -6px!important;
+	margin-bottom: -1px!important;
+	text-align: center;
+	height: 76px!important;
+}
+.navRight li{
+	display: block;
+	width: 72px;
+	padding-bottom: 0px!important;
+	border: 1px solid #DDD;
+	
+}
+.navRightDetail{
+	display: block;
+	height: 155px;
+	border: 1px solid #FF5000;
+}
+.taobaoHeadLines{
+	width: 890px;
+	height: 100px;
+	border: 1px solid black;
+	display: block;
+	margin-top: 10px;
+	float: left;
+}
+
+.aliApp{
+	height: 110px;
+	
+}
+.aliApp span{
+	font-size: 14px;
+	font-weight: 700;
+	padding-left: 14px;
+}
+.aliApp a{
+	float: right;
+	font-size: 12px;
+	color: black;
+}
+.navAliApp li{
+	padding: 12px!important;
+}
+.themeMarketDetail{
+	transition: all 0.5s;
+	width: 710px; height: 522px;
+	border: solid 2px #FF5000;
+	float: left;
+	display: none;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	box-shadow: 5px 5px 5px lightgray;
+	background-color: white;
+}
+.closeQRCode{
+	width: 14px; height: 14px; border: 1px solid #DDD;
+	float: left;
+	text-align: center;
+	font-size: 10px;
+	margin-top: 20px;
+	cursor: pointer;
+}
+.QRCode{
+	margin-top: 20px; border: 1px solid lightgray; height: 90px; width: 76px; float: left; text-align: center;
+}
+.themeMarketDetail ul{
+	list-style: none;
+	width: 415px;
+	height: 104px;
+	padding-bottom: 33px;
+	border: 1px solid black;
+}
+.leftBlock{
+	float: left;
+}
+.rightBlock{
+	text-align: center;
+	width: 290px;
+	height: 520px;
+	border: 1px solid blue;
+	float: left;
+}
+.rightBlock a{
+	font-size: 12px;
+}
+.rightBlock ul{
+	width: 290px;
+	height: 450px;
+	text-align: center;
+	padding-left: 25px;
+}
+.rightBlock ul li{
+	float: left;
+	width: 120px;
+}
+.Carousel2{
+	background-color: white;
+	height: 200px;
+}
+.Carousel2 div div img{
+	margin: 5px;
+	float:left
+}
+.locatePosition{
+	height: 380px;
+	width: 50px;
+	float: right;
+	position: absolute;
+	top: 450px;
+	padding: 0;
+	text-align: center;
+	list-style: none;
+}
+.locatePosition li{
+	font-size: 13px;
+	height: 50px;	
+	color: white;
+	padding-top: 8px;
+	cursor: pointer;
+	transition: all 0.5s;
+	background-color: white;
+}
+.locatePosition li:nth-child(2){
+	border: 1px solid red;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	background: linear-gradient(135deg,#ff971b,#ff5000);
+	font-weight: 700;
+}
+.locatePosition li:nth-child(3){
+	color: #F05;
+}
+.locatePosition li:nth-child(4){
+	color: #8D7AFB;
+}
+.locatePosition li:nth-child(5){
+	color: #A8C001;
+}
+.locatePosition li:nth-child(6){
+	color: #F40;
+}
+.locatePosition li:nth-child(7){
+	padding-top: 17px;
+	color: black;
+}
+.locatePosition li:nth-child(8){
+	color: black;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+.locatePosition li:hover{
+	background: linear-gradient(135deg,#ff971b,#ff5000);
+	color: white;
+	font-weight: 700;
+}
+
+.footerContext ul{
+	list-style: none;
+	padding: 0;
+}
+.footerContext ul li{
+	font-size: 12px;
+	float: left;
+}
+.footerContext{
+	margin: 0 auto; width: 1190px; height: 263px;
+}
