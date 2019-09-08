@@ -3,13 +3,16 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 //TypeError: CleanWebpackPlugin is not a constructor时，要加{}
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const Webpack = require("webpack");
+const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
+const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 
 module.exports = {
     mode: "production",
     entry: './src/js/index.js',
     output: {
-        filename: './js/index.js',
-        path: path.resolve(__dirname, '../build')
+        filename: './js/[hash:5].js',
+        path: path.resolve(__dirname, '../dist')
     },
     //loaders
     module: {
@@ -20,11 +23,12 @@ module.exports = {
                 use: [ 'style-loader', 'css-loader' ]
             },*/
             //使用ExtractTextPlugin生成CSS文件
+            //使用Postcss-loader扩展css前缀
             {
                 test: /\.css$/,
                 use: ExtractTextPlugin.extract({
                     fallback: "style-loader",
-                    use: "css-loader"
+                    use: ["css-loader","postcss-loader"]
                 })
             },
             //使用less-loader将less编译为css样式
@@ -48,7 +52,7 @@ module.exports = {
                         options: {
                             limit: 8192,//小于8KB的图片，转换为base64
                             outputPath: 'img',//输出的路径
-                            publicPath:'../build/img',//资源路径
+                            publicPath:'../dist/img',//资源路径
                             name:'[hash:5].[ext]'//图片名称(哈希值前五位)
                         }
                     }
@@ -94,7 +98,21 @@ module.exports = {
         //使用CleanWebpackPlugin清空文件夹
         new CleanWebpackPlugin(),
         //使用ExtractTextPlugin生成CSS文件
-        new ExtractTextPlugin("css/index.css"),
-    ]
+        new ExtractTextPlugin("css/[hash:5].css"),
+        //使用UglifyJsPlugin丑化js
+        //webpack自带此插件(webpack4被移除了)
+        //sourceMap能对js代码作映射
+        new UglifyJsPlugin({sourceMap:true}),
+        //使用OptimizeCssAssetsPlugin压缩css
+        new OptimizeCssAssetsPlugin({
+            assetNameRegExp:/\.css$/g,
+            cssProcessor:require("cssnano"),
+            cssProcessorPluginOptions:{
+                preset:['default',{discardComments:{removeAll:true}}]
+            },
+            canPrint:true
+        })
+    ],
 
+    devtool: "source-map"
 };
