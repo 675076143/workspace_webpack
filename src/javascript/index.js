@@ -1,3 +1,6 @@
+import css from '../css/index.css';
+import html from '../index.html'
+
 var themeMarketDetail = $(".themeMarketDetail");
 var closeQRCode = $(".closeQRCode");
 var QRCode = $(".QRCode");
