@@ -6,7 +6,7 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
     mode: "production",
-    entry: './src/javascript/index.js',
+    entry: './src/js/index.js',
     output: {
         filename: './js/index.js',
         path: path.resolve(__dirname, '../build')
@@ -92,14 +92,13 @@ module.exports = {
             template: "./src/index.html"//模板文件
         }),
         //使用CleanWebpackPlugin清空文件夹
-        new CleanWebpackPlugin(),
+        //new CleanWebpackPlugin(),
         //使用ExtractTextPlugin生成CSS文件
         new ExtractTextPlugin("css/index.css"),
     ],
 
     //使用devServer
     devServer: {
-        contentBase: path.join(__dirname, "dist"),
         compress: true,//压缩
         port: 9000,//端口号
         open: true,//自动打开浏览器
