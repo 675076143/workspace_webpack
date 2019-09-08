@@ -1,13 +1,15 @@
 # workspace_webpack
-配置webpack脚手架
 
-主要涉及三个配置文件
-webpack.build.js //生产环境配置
-webpack.dev.js //开发环境配置
-webpack.dist.js //生产环境配置
 
-实现了src => build => dist的自动化生产
+### 主要涉及三个配置文件  
 
+webpack.build.js //生产环境配置  
+webpack.dev.js //开发环境配置  
+webpack.dist.js //生产环境配置  
+
+实现了 src --> build --> dist  的自动化生产
+
+```javascript
 loader:[
   使用css-loader解析css样式,
   使用ExtractTextPlugin生成CSS文件,
@@ -35,3 +37,4 @@ devServer: {
     open: true,//自动打开浏览器
     hot:true//热模替换
 }
+```
